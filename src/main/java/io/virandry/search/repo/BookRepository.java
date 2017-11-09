@@ -11,6 +11,7 @@ import io.virandry.search.model.Book;
 
 public interface BookRepository extends SolrCrudRepository<Book, String> {
 	
+	@Query("author:*?0*")
 	public List<Book> findByAuthor(String author);
 	
 	@Query("author:*?0*")

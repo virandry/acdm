@@ -3,8 +3,46 @@
 <head>
 <meta charset="UTF-8" />
 <title></title>
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/style.css}" />
 </head>
 <body>
-	<a th:href="@{/index}" th:text="#{search.acdm.app.title}"></a>
+	<div id="app" v-cloak>
+		<nav class="navbar navbar-light bg-faded">
+			<h1 class="navbar-brand mb-0">{{title}}</h1>
+		</nav>
+		<div class="container my-5 px-0">
+			<input class="form-control" type="text" v-model="searchTerm" 
+				@input="searchBooks()"
+				@keyup.enter = 'displayResult'
+        		@keyup.down = 'cursorDown'
+        		@keyup.up = 'cursorUp' />
+			<ul class="dropdown-menu" v-if="toggleDDL">
+		        <li v-for="(item,index) in receivedBooks" class="dropdown-item" @click="selectItem(item)" :class="{'active': isActive(index)}">
+		            <a href="#">{{ item.name }}</a>
+		        </li>
+		    </ul>
+		    <div class="row">
+		    	<div v-for="item in results" :key="item.id" class="col-md-4 col-sm-6 col-xs-12 p-3">
+		    		<div  class="card">
+					  <div class="card-block">
+					    <h4 class="card-title">{{item.author}}</h4>
+					    <p class="card-text">
+					    	<span v-if="item.series != null">Series: {{item.series}}</span>
+					    	<span>Title: {{item.name}}</span>
+					    </p>
+					  </div>
+					</div>	
+		    	</div>
+		    </div>
+		    
+		</div>
+	</div>
+	<script th:src="@{/js/vue.min.js}"></script>
+	<script th:src="@{/js/axios.min.js}"></script>
+	<script th:src="@{/js/main.js}"></script>
+
 </body>
 </html>
