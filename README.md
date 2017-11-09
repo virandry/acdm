@@ -17,5 +17,9 @@ curl 'http://localhost:8983/solr/booklist/update?commit=true' --data-binary @Boo
 ~> to test the import is successful\
 curl 'http://localhost:8983/solr/booklist/select?q=*:*&rows=10'\
 
+git clone https://github.com/virandry/search-acdm.git
+cd search-acdm
+mvn compile war:war
+
 #will be updated
 
