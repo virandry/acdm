@@ -13,9 +13,6 @@ new Vue({
 	el: '#app',
 	data: data,
 	mounted: function () {
-		this.receivedBooks = [{"id":"0439dee6-cff4-4b42-909f-66c3facd5f48","author":"Ava Gray","series":"Skin","name":"Skin Game"},{"id":"87e8a3c0-1f72-4128-8803-8d872fe8ebd8","author":"Alasdair Gray","series":null,"name":"Lanark: A Life in Four Books"},{"id":"c20356a7-db42-4e52-b040-6340c5e9a673","author":"Emily Gray Tedrowe","series":null,"name":"Commuters: A Novel"}];
-		this.toggleDDL = false;
-		this.results =  this.receivedBooks;
 	},
 	watch: {
 		searchTerm: function (val) {
