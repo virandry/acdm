@@ -1,5 +1,11 @@
 # acdm
 
+Requirements:
+1. Any Debian or Ubuntu flavor OS\
+2. Maven (https://maven.apache.org/download.cgi)\
+3. Git (https://git-scm.com/)\
+4. Apache Solr\
+
 Installation\
 wget http://www-eu.apache.org/dist/lucene/solr/7.1.0/solr-7.1.0.tgz\
 tar -zxvf solr-7.1.0.tgz\
