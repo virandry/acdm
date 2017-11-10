@@ -69,5 +69,7 @@ npm install
 # Serve with hot reload at localhost:2222
 SET PORT=2222
 npm run dev
+
+go to localhost:2222
 ```
 
