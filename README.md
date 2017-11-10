@@ -1,10 +1,16 @@
-# Book Search Web Service
+# Book Search Web Service & Client
+
+## Preview (Scrolldown for Guideline)
+1. select book from the list by click
+2. select book from the list by navigating using arrow and enter (return)
+3. search by author
+![alt text](https://image.ibb.co/eSB4fw/ww.gif)
 
 ## Requirements:
 1. Any Debian or Ubuntu flavor OS
 2. Maven (https://maven.apache.org/download.cgi)
 3. Git (https://git-scm.com/)
-4. Apache Solr 7.1.0 (SE DB -indexed - NoSQL - Document)
+4. Apache Solr 7.1.0 (SE -indexed - NoSQL - Document)
 5. Node JS and NPM
 6. curl
 7. Book Search Web Service source code <https://github.com/virandry/search-acdm.git>
