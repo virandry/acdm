@@ -4,7 +4,7 @@
 1. select book from the list by click
 2. select book from the list by navigating using arrow and enter (return)
 3. search by author
-![alt text](https://image.ibb.co/eSB4fw/ww.gif)
+![alt text](https://image.ibb.co/hJ1efw/qrr.gif)
 
 ## Requirements:
 1. Any Debian or Ubuntu flavor OS
