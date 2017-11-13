@@ -8,7 +8,7 @@ import io.virandry.search.model.GenericError;
 import io.virandry.search.model.GenericErrorResponse;
 import io.virandry.search.util.Constant;
 
-@CrossOrigin(origins = "http://localhost:2222")
+@CrossOrigin(origins = {"${cors.dev}","${cors.prd}"})
 public abstract class AbstractRest {
 	private static final Logger logger = LoggerFactory.getLogger(AbstractRest.class);
 
