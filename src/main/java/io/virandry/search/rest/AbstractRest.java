@@ -2,11 +2,13 @@ package io.virandry.search.rest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import io.virandry.search.model.GenericError;
 import io.virandry.search.model.GenericErrorResponse;
 import io.virandry.search.util.Constant;
 
+@CrossOrigin(origins = "http://localhost:2222")
 public abstract class AbstractRest {
 	private static final Logger logger = LoggerFactory.getLogger(AbstractRest.class);
 

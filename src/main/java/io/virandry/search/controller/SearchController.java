@@ -13,6 +13,12 @@ import com.google.gson.Gson;
 import io.virandry.search.model.Book;
 import io.virandry.search.service.BookService;
 
+/*
+ * Previously I combined the front end in one package
+ * Front-end is moved to nodejs environment
+ * 
+ * */
+
 @Controller
 @Scope("request")
 public class SearchController extends AbstractController {
@@ -20,6 +26,7 @@ public class SearchController extends AbstractController {
 	@Autowired
 	private BookService bookService;
 
+	//only use for dev logging purpose
 	@Autowired
 	private Gson gson;
 	
