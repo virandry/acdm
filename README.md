@@ -49,7 +49,7 @@ curl 'http://localhost:8983/solr/booklist/select?q=*:*&rows=10'
 # Deployment of Web Service
 ## The web service is packaged as WAR file (not JAR) as previously I combined the static files in this package
 ## After that I make the front end code standalone and run it in nodejs environment
-mvn clean install tomcat7:run
+mvn clean install spring-boot:run
 
 # To test the web service
 go to http://localhost:1110/books?author=terry
