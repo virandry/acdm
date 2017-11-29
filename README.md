@@ -54,7 +54,7 @@ mvn clean install spring-boot:run
 # To test the web service
 go to http://localhost:1110/books?author=terry
 ```
-### Book Search Client Deployment (TO BE UPDATED)
+### Book Search Client Deployment - VueJS 2
 ``` bash
 # Before()
 cd /opt
@@ -73,3 +73,18 @@ npm run dev
 go to localhost:2222
 ```
 
+### Book Search Client Deployment - ReactJS
+``` bash
+# Before()
+cd /opt
+
+# Retrieve Book Search Client source code
+git clone https://github.com/virandry/search-react.git
+
+# installing Webpack globally and install project dependencies
+npm install
+
+# Serve
+npm start
+
+```
