@@ -1,5 +1,10 @@
 # Book Search Web Service & Client
 
+## Main Tech
+1. Spring Boot (https://github.com/virandry/search-backend)
+2. VueJS 2 (https://github.com/virandry/search-vue) 
+3. ReactJS (https://github.com/virandry/search-react)
+
 ## Preview (Scrolldown for Guideline)
 1. select book from the list by click
 2. select book from the list by navigating using arrow and enter (return)
